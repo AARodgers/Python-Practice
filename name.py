@@ -34,3 +34,8 @@ print(favorite_language)
 nostarch_url = 'https://nostarch.com'
 nostarch_url = nostarch_url.removeprefix('https://')
 print(nostarch_url)
+
+# to remove a suffix use removesuffix()
+filename = 'python_notes.txt'
+filename = filename.removesuffix('.txt')
+print(filename)
