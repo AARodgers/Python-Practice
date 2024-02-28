@@ -54,3 +54,45 @@ numbers = [1, 2, 3, 4]
 print(numbers)
 second_number = numbers.pop(1)
 print(second_number)
+
+#to remove an item use .remove(item)
+# note: .remove('item') only removes the FIRST occurance of the value specified, you a loop \
+# if you want to remove all of them
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+motorcycles.remove('ducati')
+print(motorcycles)
+#OR
+furniture = ['chair', 'table', 'couch', 'desk']
+print(furniture)
+too_old = 'chair'
+furniture.remove(too_old)
+print(furniture)
+print(f"\nA {too_old.title()} is too old to keep.")
+
+# use sorted(list) to maintain the original order of a list and to present it in a sorted order
+# can do print(sorted(cars, reverse=True)) to get it in reverse order
+# note: it doesn't alwasy work if you have a mix of upper and lower case numbers
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print("Here is the origin list of cars:")
+print(cars)
+print("\nHere is the sorted list:")
+print(sorted(cars))
+print("\nHere is the original list again:")
+print(cars)
+
+'''
+#use .reverse() to reverse chronological order, ex. chronological order of when you owned cars
+# list.reverse() to reverse the order of the list
+# note: list.reverse() permanently changes order of list, but you can revert to original \
+#by calling .reverse() on it again
+'''
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print("\nOriginal list of:")
+print(cars)
+cars.reverse()
+print("\nReversed list of cars:")
+print(cars)
+
+# use len(list) to find the length of a list
+print(f"\nThe length of the list of cars is {len(cars)} ")
