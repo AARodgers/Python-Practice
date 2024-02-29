@@ -26,3 +26,13 @@ squares2 = []
 for value in range(1, 11):
     squares2.append(value ** 2)
 print(squares2)
+# OR use a list comprehension, which does the samw a for loop
+squares3 = [value**2 for value in range(1, 11)]
+print(squares3)
+
+#min, max, sum
+digits = list(range(10))
+print(digits)
+print(min(digits))
+print(max(digits))
+print(sum(digits))
