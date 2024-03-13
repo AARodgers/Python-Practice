@@ -13,3 +13,15 @@ print(my_foods)
 
 print("\nM friend's favority foods are:")
 print(friends_foods)
+
+my_pizzas = ['margarita', 'cheese', 'pepperoni', 'vegetable']
+friend_pizza = my_pizzas[:]
+my_pizzas.append('meat lovers')
+friend_pizza.append('pineapple')
+print("My favorite pizzas are:")
+for pizza in my_pizzas:
+  print(pizza)
+
+print("My friend's favorite pizzas are:")
+for pizza in friend_pizza:
+    print(pizza)
