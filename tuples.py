@@ -9,7 +9,27 @@ print(dimensions[0])
 for dimension in dimensions:
     print(dimension)
 
-#tuple with one item
+#tuple with one item, because they are defined by the comma
 my_t = (3,)
 
-#
+#writing over a tuple, you can reassign the value of the tuple variable
+dimensions = (200, 5)
+print("Original dimensions:")
+for dimension in dimensions:
+    print (dimension)
+
+dimensions = (400, 100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+
+buffet = ('meat', 'salad', 'soup', 'bread', 'desert')
+print("Original buffet foods:")
+for food in buffet:
+    print(food)
+
+buffet = ('pizza', 'mixed veggie', 'soup', 'bread', 'desert')
+print("\nNew Buffet Menu:")
+for food in buffet:
+    print(food)
