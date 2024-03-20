@@ -59,4 +59,12 @@ for link in title_links:
 # find all links that are descendants of h3 and article
 scraped.select("article h3 a")
 
-#find all linds, h3, and articles, 
+#find all linds, h3, and articles, no matter the relation
+scraped.select("article,h3,a")
+
+#find all elements having both classes
+scraped.select(".instock.availability")
+
+#find all elemenets with .product_pod class with p tag with class
+#instock.availability and a class .price_color
+scraped.select(".product_pod p.instock.availability,.price_color")
